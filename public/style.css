@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía general y fondo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Contenedor centrado para login y dashboard */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+/* Estilos de formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botones */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Botón de cerrar sesión flotante */
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #dc3545;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Lista de empleados */
+#empleados {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#empleados li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s;
+}
+
+#empleados li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Botón eliminar dentro de lista */
+#empleados button {
+  background-color: #dc3545;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+#empleados button:hover {
+  background-color: #c82333;
+}
+
+/* Formularios combinados en dashboard */
+#addForm,
+#searchForm {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+#searchForm input[type="text"] {
+  width: 60%;
+}
+
+#searchForm button {
+  width: 35%;
+}
+
+/* Responsive: ancho completo en pantallas pequeñas */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #searchForm input[type="text"],
+  #searchForm button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+

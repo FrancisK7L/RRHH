@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Empleados</h2>
+  <button class="logout-btn" onclick="logout()">Cerrar sesión</button>
+
+  <!-- Formulario de búsqueda -->
+  <form id="searchForm">
+    <input type="text" id="searchName" placeholder="Buscar por nombre">
+    <button type="submit">Buscar</button>
+    <button type="button" id="clearSearch">Ver todos</button>
+  </form>
+
+  <!-- Formulario para agregar o editar un empleado -->
+  <form id="addForm" class="container">
+    <h3 id="formTitle">Agregar empleado</h3>
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="puesto" placeholder="Puesto" required>
+    <input type="text" id="departamento" placeholder="Departamento" required>
+    <input type="number" id="salario" placeholder="Salario" required>
+    <button type="submit" id="submitButton">Agregar</button>
+    <button type="button" id="cancelEdit" style="display: none; margin-top: 10px;">Cancelar edición</button>
+  </form>
+
+  <!-- Lista donde se mostrarán los empleados -->
+  <ul id="empleados"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
